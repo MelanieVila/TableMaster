@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 - Juegos de Mesa & Café</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Table Master</h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Catálogo de Juegos</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="portada">
+        <div class="contenido-portada">
+            <h2>Juegos de Mesa & Café</h2>    
+            <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#BA9D7A" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="11" r="3" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+            </svg>
+            Villa Crespo, Buenos Aires</p>
+            <a class="boton" href="#">Contactar</a>
+        </div>
+    </section>
+
+    <main class="contenedor sombra">
+        <h2>¿Qué ofrecemos?</h2>        
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Juegos de Mesa</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-play-card" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect transform="rotate(90 12 12)" x="3" y="5" width="18" height="14" rx="2" />
+                        <line x1="8" y1="6" x2="8.01" y2="6" />
+                        <line x1="16" y1="18" x2="16.01" y2="18" />
+                        <path d="M12 16l-3 -4l3 -4l3 4z" />
+                    </svg>
+                </div>
+                <p>Acceso a más de 300 juegos de mesa + Explicación y guía de los juegos que elijan.</p>
+            </section>
+            <section class="servicio">
+                <h3>Merienda</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coffee" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" />
+                        <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                        <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                        <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                        <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+                    </svg>
+                </div>
+                <p>Variedad de infusiones, medialunas, alfajores, tostados, licuados y más. ¡Para disfrutar mientras juegan!</p>
+            </section>
+            <section class="servicio">
+                <h3>Horarios</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+                        <circle cx="18" cy="18" r="4" />
+                        <path d="M15 3v4" />
+                        <path d="M7 3v4" />
+                        <path d="M3 11h16" />
+                        <path d="M18 16.496v1.504l1 1" />
+                    </svg>
+                </div>
+                <p>Miércoles y jueves de 14 a 20 hs. | Viernes, sábados y domingos de 14 a 22 hs. | Cada entrada cuesta $600.</p>
+            </section>
+        </div>
+        
+        <section>
+            <h2>¡Reservá tu lugar!</h2>
+            
+            <form class="formulario">
+            <fieldset>
+                <legend>Llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo"><label>Nombre</label>
+                    <input class="input-campo" type="text" placeholder="Nombre"></div>
+
+                    <div class="campo"><label>Teléfono</label>
+                    <input class="input-campo" type="tel" placeholder="Teléfono"></div>
+
+                    <div class="campo"><label>Correo</label>
+                    <input class="input-campo" type="email" placeholder="Email"></div>
+
+                    <div class="campo"><label>Mensaje</label>
+                    <textarea class="input-campo"></textarea></div>
+                </div>
+                <div class="alinear-boton"><input class="boton" type="submit" value="Enviar"></div>
+            </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. Table Master, 2019-2022.</p>
+    </footer>
+</body>
+</html>
